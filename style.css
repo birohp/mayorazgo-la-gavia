@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+header, nav ul {
+  background-color: #d1e0e0;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+.proveedor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+img {
+  width: 150px;
+  height: auto;
+}
