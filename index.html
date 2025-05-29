@@ -4,20 +4,72 @@
   <meta charset="UTF-8">
   <title>Mayorazgo La Gavia</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .banner {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      filter: brightness(70%);
+    }
+
+    .banner-texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+
+    .banner-texto h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    nav ul {
+      background-color: #0d6efd;
+      padding: 10px 0;
+      border-radius: 8px;
+    }
+
+    nav ul li a {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Mayorazgo La Gavia</h1>
-    <nav>
-      <ul>
-        <li><a href="informacion.html">Información</a></li>
-        <li><a href="proveedores.html">Proveedores</a></li>
-        <li><a href="sugerencias.html">Sugerencias y Quejas</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <!-- Banner com título incorporado -->
+  <div class="container banner">
+    <img src="assets/fotos/banner.jpg" alt="Banner del condominio">
+    <div class="banner-texto">
+      <h1>Mayorazgo La Gavia</h1>
+    </div>
+  </div>
+
+  <!-- Menu de navegação -->
+  <nav class="container mb-4">
+    <div class="d-grid gap-3">
+      <a href="informacion.html" class="btn btn-primary btn-lg">Información</a>
+      <a href="proveedores.html" class="btn btn-primary btn-lg">Proveedores</a>
+      <a href="sugerencias.html" class="btn btn-primary btn-lg">Sugerencias y Quejas</a>
+    </div>
+  </nav>
+  
+
+  <!-- Conteúdo principal -->
   <main class="container text-center">
     <p class="lead">Bienvenido al sitio oficial del condominio Mayorazgo La Gavia en León, Guanajuato. Aquí encontrará información relevante, contacto con proveedores y un espacio para enviar sugerencias o quejas.</p>
   </main>
+
 </body>
 </html>

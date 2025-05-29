@@ -4,13 +4,49 @@
   <meta charset="UTF-8">
   <title>Información</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Ícones do Bootstrap (opcional, pode usar Font Awesome ou SVGs também) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-  <h2>Documentos y Fotografías</h2>
-  <ul>
-    <li><a href="assets/documentos/reglamento.pdf" target="_blank">Reglamento del condominio (PDF)</a></li>
-    <li><a href="assets/fotos/reunion.jpg" target="_blank">Foto de la reunión vecinal</a></li>
-  </ul>
-  <a href="index.html">Volver</a>
+  <main class="container my-5">
+    <h2 class="mb-4 text-center">Documentos</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Tipo</th>
+            <th>Nombre del archivo</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><i class="bi bi-file-earmark-pdf text-danger fs-4"></i></td>
+            <td><a href="assets/documentos/Comunicado_importante.pdf" target="_blank">Comunicado_importante.pdf</a></td>
+            <td>2025-05-20</td>
+          </tr>
+
+          <tr>
+            <td><i class="bi bi-image text-success fs-4"></i></td>
+            <td><a href="assets/fotos/Comunicado_paneles_solares.pdf" target="_blank">Comunicado_paneles_solares.pdf</a></td>
+            <td>2025-05-20</td>
+          </tr>
+
+          <tr>
+            <td><i class="bi bi-file-earmark-pdf text-danger fs-4"></i></td>
+            <td><a href="assets/fotos/Comunicado_Seguridad" target="_blank">Comunicado_Seguridad</a></td>
+            <td>2025-05-09</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-primary">Volver</a>
+    </div>
+  </main>
 </body>
 </html>
