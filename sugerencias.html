@@ -2,17 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sugerencias y Quejas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h2 class="mb-4">Envíe su sugerencia o queja (anónimo)</h2>
-    <form action="https://formspree.io/f/myzjgjaq" method="POST">
-      <textarea name="mensaje" rows="6" class="form-control mb-3" placeholder="Escriba su sugerencia o queja aquí..."></textarea>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+  <main class="container-fluid px-3 py-4">
+    <h2 class="mb-4 text-center">Envíe su sugerencia o queja (anónimo)</h2>
+    
+    <form action="https://formspree.io/f/myzjgjaq" method="POST" class="mb-3">
+      <textarea name="mensaje" rows="6" class="form-control mb-3" placeholder="Escriba su sugerencia o queja aquí..." required></textarea>
+      <button type="submit" class="btn btn-primary w-100">Enviar</button>
     </form>
-    <a href="index.html" class="btn btn-secondary mt-3">Volver</a>
+    
+    <div class="text-center">
+      <a href="index.html" class="btn btn-secondary w-100">Volver</a>
+    </div>
   </main>
 </body>
 </html>

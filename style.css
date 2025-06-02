@@ -2,40 +2,55 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
   background-color: #f8f9fa;
-}
-
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+  padding-bottom: 40px;
 }
 
 main, h2, .proveedor, form {
   max-width: 800px;
   margin: auto;
+  padding: 0 1rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.banner-texto h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-texto h1:hover {
+  letter-spacing: 6px;
+  color: #e2e6ea;
 }
 
 .proveedor {
@@ -45,9 +60,11 @@ main, h2, .proveedor, form {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .proveedor img {
+  width: 100%;
   max-width: 150px;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -71,19 +88,4 @@ button {
 
 button:hover {
   background-color: #0b5ed7;
-}
-
-.banner-texto h1 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
-
-.banner-texto h1:hover {
-  letter-spacing: 6px;
-  color: #e2e6ea;
 }
