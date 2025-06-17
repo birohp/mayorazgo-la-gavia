@@ -6,7 +6,7 @@ body {
   padding-bottom: 40px;
 }
 
-main, h2, .proveedor, form {
+main, h2, .proveedor, .negocios, form {
   max-width: 800px;
   margin: auto;
   padding: 0 1rem;
